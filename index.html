@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>绥化博物馆-战国-印纹陶罐</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./img/over.png" type="image/x-icon">
+    <script>
+        (function(doc, win, designWidth) {
+            const html = doc.documentElement;
+            const refreshRem = () => {
+                const clientWidth = html.clientWidth;
+                if (clientWidth >= designWidth) { 
+                    html.style.fontSize = '100px';
+                } else {
+                    html.style.fontSize = 100 * (clientWidth / designWidth) + 'px';
+                }
+            };
+            doc.addEventListener('DOMContentLoaded', refreshRem);
+        })(document, window, 750);
+    </script>
+</head>
+<body>
+    <div id='top'>
+        <div id='position'><img id='position_img' src="./img/over.png" alt=""></div>
+        <div id='background'></div>
+        <div id='help'><img id='help_img' src="./img/help.png" alt=""></div>
+    </div>
+    <div id='background_color'>
+        <div class='background_color' id='one'></div>
+        <div class='background_color' id='two'></div>
+        <div class='background_color' id='three'></div>
+        <div class='background_color' id='four'></div>
+        <div class='background_color' id='five'></div>
+    </div>
+    <div id="bottom">
+        <div id='back'>返回</div>
+        <div id='home'>简介</div>
+        <div id='move'>旋转</div>
+    </div>
+    <div id='bak'>
+        <!-- 放置模型 -->
+    </div>
+    <!-- help -->
+    <div id='help_screen'>
+        <img id='help_screen_img' src="./img/zhi.jpg" alt="">
+        <div id='off'>
+            <img id='off_img' src="./img/close.png" alt="">
+        </div>
+    </div>
+    <!-- 简介 -->
+    <div id='jianjie'>
+        <div>
+            <img id='text_img' src="./img/1540814643.png" alt="">
+            <p id='text' >器身布满纹饰，是典型战国时期陶罐的特征。可见当时制陶工艺已经发展到了一定水平。</p>
+        </div>
+        <div id='off1'>
+            <img id='off1_img' src="./img/close.png" alt="">
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
