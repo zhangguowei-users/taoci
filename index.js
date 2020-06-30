@@ -13,12 +13,29 @@ const off1 = document.querySelector('#off1');
 const jianjie = document.querySelector('#jianjie');
 const home = document.querySelector('#home');
 const move = document.querySelector('#move');
+const jdt = document.querySelector('#jdt');
+const jdt_n = document.querySelector('#jdt_n');
+const number = document.querySelector('#number');
+let n=0;
+let w = 0;
 document.addEventListener('touchmove',function(e){
    e.preventDefault();
 },{passive:false});
-setTimeout(function(){
-    help_screen.style.display = 'none';
-},3000);
+        setInterval(() => {
+            if(n <=100){
+            w+=1.168;
+            jdt_n.style.width=w+'rem';
+            console.log(n);
+            n+=20;
+            number.innerHTML = n+'%';
+        }else{
+            n=0;
+            jdt_n.style.width +=0;
+        }; },1000);
+        setTimeout(() => {
+                help_screen.style.display = 'none';
+        }, 6000); 
+    
 for(let i=0,len=img.length;i<len;i++){
     img[i].addEventListener('touchstart',function(e){
         e.preventDefault();

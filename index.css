@@ -256,3 +256,19 @@ body{
     margin-top: 20%;
     margin-left: 20%;
 }
+#jdt{
+    display: inline-block;
+    height:0.1rem;
+    width: 5.84rem;
+    border:1px solid white;
+    margin-left: 0.83rem;
+}
+#number{
+    color: white;
+    font-size:0.1rem;
+}
+#jdt_n{
+    background-color: yellow;
+    height: 100%;
+    width: 0rem;
+}
