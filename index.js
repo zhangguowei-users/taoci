@@ -24,9 +24,6 @@ for(let i=0,len=img.length;i<len;i++){
         e.preventDefault();
     });
 };
-window.addEventListener('touchmove',function(e) {
-    e.preventDefault();
-});
 background.addEventListener('touchstart',function(e){
     background_color.style.display = 'inline-block';
 });
