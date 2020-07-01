@@ -29,7 +29,7 @@ document.addEventListener('touchmove',function(e){
             number.innerHTML = n+'%';
         }else{
             n=0;
-            jdt_n.style.width +=0;
+            w=0;
         }; },1000);
         setTimeout(() => {
                 help_screen.style.display = 'none';

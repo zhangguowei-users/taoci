@@ -265,7 +265,7 @@ body{
 }
 #number{
     color: white;
-    font-size:0.1rem;
+    font-size:10px;
 }
 #jdt_n{
     background-color: yellow;
