@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="./img/over.png" type="image/x-icon">
     <script>
-        (function(doc, win, designWidth) {
-            const html = doc.documentElement;
-            const refreshRem = () => {
-                const clientWidth = html.clientWidth;
+        const refreshRem=()=>{
+            var _html = document.documentElement;
+            var designWidth = 750;
+                var clientWidth = _html.clientWidth;
                 if (clientWidth >= designWidth) { 
-                    html.style.fontSize = '100px';
+                    console.log('a')
+                    _html.style.fontSize = '100px';
                 } else {
-                    html.style.fontSize = 100 * (clientWidth / designWidth) + 'px';
+                    _html.style.fontSize = 100 * (clientWidth / designWidth) + 'px';
                 }
             };
-            doc.addEventListener('DOMContentLoaded', refreshRem);
-        })(document, window, 750);
+            document.addEventListener('DOMContentLoaded', refreshRem);
     </script>
 </head>
 <body>

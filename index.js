@@ -61,6 +61,8 @@ position.addEventListener('touchstart',function(e){
 help.addEventListener('touchstart',function(e){
     help_screen.style.display = 'inline-block';
     off.style.display = 'inline-block';
+    jdt.style.display = 'none';
+    number.style.display = 'none';
 });
 //关闭帮助页
 off_img.addEventListener('touchstart',function(e){
