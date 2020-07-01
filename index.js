@@ -25,7 +25,6 @@ document.addEventListener('touchmove',function(e){
             if(n <=100){
             w+=1.168;
             jdt_n.style.width=w+'rem';
-            console.log(n);
             n+=20;
             number.innerHTML = n+'%';
         }else{
